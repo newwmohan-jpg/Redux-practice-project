@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import Savedcard from './pages/Savedcard'
 import { Routes } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify'
 const App = () => {
   return (
     <div className='min-h-screen text-white bg-gray-950'>
@@ -11,7 +12,7 @@ const App = () => {
   <Route path='/' element={<HomePage/>} />
   <Route path='/collection' element={<Savedcard/>}/>
 </Routes>
- 
+ <ToastContainer/>
     </div>
   )
 }
