@@ -1,14 +1,17 @@
-import React from 'react'
-import Searchbar from './components/Searchbar'
-import Tabs from './components/Tabs'
-import ResultGrid from './components/ResultGrid'
+import React, { cloneElement } from 'react'
+
+import { Route } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import Savedcard from './pages/Savedcard'
+import { Routes } from 'react-router-dom'
 const App = () => {
   return (
-    <div className='h-screen text-white bg-gray-950'>
-
-    <Searchbar/>
-      <Tabs/>
-      <ResultGrid/>
+    <div className='min-h-screen text-white bg-gray-950'>
+<Routes>
+  <Route path='/' element={<HomePage/>} />
+  <Route path='/collection' element={<Savedcard/>}/>
+</Routes>
+ 
     </div>
   )
 }

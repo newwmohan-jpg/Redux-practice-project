@@ -15,7 +15,7 @@ const Searchbar = () => {
   return (
     <div>
       <form onSubmit={(e)=>{submithandeler(e)}} >
-        <div className='flex items-center justify-center'>
+        <div className='flex items-center justify-center bg-blue-500 mb-3'>
             <input 
             value={text}
             onChange={(e)=>{
@@ -24,7 +24,7 @@ const Searchbar = () => {
             required
             type="text"
             placeholder='search...'
-             className='text-white bg-blue-950 m-8 mr-1 text-center p-3 rounded border-none outline-none w-full'/>
+             className='text-white bg-blue-950  m-3 text-center p-3 rounded border-none outline-none w-full'/>
              <button className='cursor-pointer active:scale-95 bg-amber-600 text-blue-950 font-bold p-2.5 rounded m-10 ml-0 border-none outline-none'>Search</button>
         </div>
       </form>
