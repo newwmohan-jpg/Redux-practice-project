@@ -33,7 +33,7 @@ localStorage.removeItem('collection')
 
         addedToast:()=>{
 toast.success('added to collection ', {
-position: "top-right",
+position: "top-left",
 autoClose: 5000,
 hideProgressBar: false,
 closeOnClick: true,
@@ -46,7 +46,7 @@ transition: Bounce,
         },
         removedToast:()=>{
 toast.success('Removed from collection ', {
-position: "top-right",
+position: "top-left",
 autoClose: 5000,
 hideProgressBar: false,
 closeOnClick: true,
