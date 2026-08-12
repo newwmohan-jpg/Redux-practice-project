@@ -13,8 +13,8 @@ const HomePage = () => {
         <div>
             <div className='flex justify-between items-center bg-blue-400'>
                 <div className='text-2xl font-bold text-blue-900 p-4 pl-10 '>Media Search</div>
-                <div className='flex items-center gap-5 pr-10 p-4 text-white '>
-                    <Link className='bg-blue-900 rounded p-1.5'  to='/'>Search</Link>
+                <div className='items-center pr-10 p-4 text-white '>
+                   
                     <Link className='bg-blue-900 rounded p-1.5' to='/collection'>Collection</Link>
                 </div>
              </div>
